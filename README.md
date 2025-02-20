@@ -1,6 +1,6 @@
 # Explainable Medical Recommendation Engine (OWL + LLM Inference)
 
-This project implements a simplified medical recommendation engine, enhanced with the OpenAI API.
+This application implements a simplified medical recommendation engine, enhanced with the LLM inference through OpenAI Web API.
 
 ## Features
 
@@ -14,26 +14,19 @@ This project implements a simplified medical recommendation engine, enhanced wit
 *   **Explainability:** Focuses on providing clear, understandable explanations for recommendations.
 *   **Ranking:** Ranks recommendations based on ontology connections.
 
-## Files
-
-*   `ontology.owl`: The medical ontology (OWL/TTL).
-*   `main.py`: The main Python script.
-*   `.env`: (Optional, but recommended) A file to store your OpenAI API key.
 
 ## How to Run
 
 1.  **Install Dependencies:**
     ```bash
-    pip install rdflib openai python-dotenv
+    pip install -r requirements.txt
     ```
 
 2.  **Set up API Key:**
-    *   Create a `.env` file in the project directory.
     *   Add your OpenAI API key to the `.env` file:
         ```
         OPENAI_API_KEY=your_api_key_here
         ```
-    *   **Alternatively**, you can set the `OPENAI_API_KEY` environment variable directly in your system.
 
 3.  **Run the Script:**
     ```bash
@@ -41,5 +34,3 @@ This project implements a simplified medical recommendation engine, enhanced wit
     ```
 
 4.  **Enter Concepts/Questions:**  You can now enter free-form text, not just exact concept names.
-
-## Example Usage
