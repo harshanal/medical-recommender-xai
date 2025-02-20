@@ -1,0 +1,3 @@
+rdflib
+openai
+python-dotenv
