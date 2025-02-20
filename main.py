@@ -5,8 +5,8 @@ import openai
 import os
 from dotenv import load_dotenv
 
-# Load API Key (best practice: use environment variables)
-load_dotenv()  # Load environment variables from a .env file (recommended)
+# Load API Key 
+load_dotenv()  
 openai.api_key = os.getenv("OPENAI_API_KEY")
 if not openai.api_key:
     raise ValueError("OpenAI API key not found.  Set the OPENAI_API_KEY environment variable.")
@@ -119,7 +119,7 @@ def map_input_to_concept(graph, user_input, ontology_ns):
     Relevant Concept:
     """
     response = openai.ChatCompletion.create(
-        model="gpt-3.5-turbo",  # Or gpt-4 if you have access
+        model="gpt-4o",  
         messages=[{"role": "system", "content": "You are a helpful assistant."},
                   {"role": "user", "content": prompt}],
         temperature=0.0,  # Low temperature for more deterministic output
